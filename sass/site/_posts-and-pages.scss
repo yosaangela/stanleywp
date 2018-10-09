@@ -76,12 +76,28 @@
 		@include make-col(12);	
 	}
 }
+
+.post {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.blog {
+  .post {
+    padding: 6rem 0;
+
+    &:nth-child(odd) {
+      background-color: $gray-100;
+    }
+  }
+}
+/*
 .blog-post{
   margin:0;
   padding: 6rem 0;
 
   &:nth-child(odd){
-  background: color;
+  background-color: black;
 }
-}
+}*/
 
