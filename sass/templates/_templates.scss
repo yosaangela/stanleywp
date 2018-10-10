@@ -1,3 +1,15 @@
 .banner {
 	background-color: $gray-200;
 }	
+
+//About
+.about-columns{
+	padding: 3rem 0;
+	h4{
+		margin-top: 2rem;
+	}
+
+	@include media-breakpoint-up(md){
+		margin-top: 0;
+	}
+}
