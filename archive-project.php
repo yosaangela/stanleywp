@@ -15,13 +15,16 @@ get_header(); ?>
 				<?php
 				if ( have_posts() ) : ?>
 
-					<header class="page-header col-md-12">
-						<?php
-							the_archive_title( '<h1 class="page-title">', '</h1>' );
-							the_archive_description( '<div class="archive-description">', '</div>' );
-						?>
+					<header class="page-header col-md-6">
 
-					</header><!-- .page-header -->
+							<?php $project_title = get_theme_mod( 'project_title', 'Projects' ); ?>
+
+							<?php if( $project_title != '') : ?>
+								<h1><?php echo $project_title; ?></h1>
+							<?php endif; ?>
+
+						</header><!-- .page-header -->
+
 
 					<?php
 					/* Start the Loop */

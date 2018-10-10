@@ -50,6 +50,7 @@ gulp.task('zip', function () {
    './js/**/*',
    './languages/*',
    './sass/**/*',
+   './plugin-activation/**/*',
    './template-parts/*',
    './templates/*',
    '!bower_components',
