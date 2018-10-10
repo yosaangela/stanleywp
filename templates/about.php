@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * Template Name: about
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -14,11 +14,11 @@
 
 get_header(); ?>
 
-<div class="about">
+<div class="banner">
 	<div class="container">
 		<div class="row justify-content-center">
 			<div id="primary" class="content-area">
-				<main id="main" class="site-main" role="main">
+				<main id="main" class="site-main text-center" role="main">
 
 					<?php
 					while ( have_posts() ) : the_post();
