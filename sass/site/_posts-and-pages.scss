@@ -78,12 +78,20 @@
   }
 }
 
+.entry-title{
+  padding: 2rem;
+}
+
 .post {
   margin: 0;
   padding: 2rem 0;
 
   .entry-title {
     font-size: 1.5rem;
+    padding: 2rem;
+    h1{
+      padding: 2rem;
+    }
     a {
       color: $body-color;
 
@@ -102,18 +110,21 @@
   .post {
     padding: 6rem 0;
 
-    &:nth-child(odd) {
-      background-color: $gray-100;
+    &:nth-child(odd) { // this one ok let me see DOM first
+      background-color: black;
     }
   }
 }
-/*
-.blog-post{
-  margin:0;
-  padding: 6rem 0;
+.site-content{
+  padding:2rem;
 
-  &:nth-child(odd){
-  background-color: black;
-}
-}*/
+    .banner {
+      .hentry {
+        background-color: transparent;
+      }
+    }
+  }
+
+
+
 

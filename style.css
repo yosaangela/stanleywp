@@ -6881,7 +6881,9 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 2rem; }
   @media (min-width: 768px) {
     .about-columns {
-      margin-top: 0; } }
+      padding: 5rem; }
+      .about-columns h4 {
+        margin-top: 0; } }
 
 /*--------------------------------------------------------------
 ## Comments
@@ -6975,11 +6977,17 @@ a.text-dark:hover, a.text-dark:focus {
       flex: 0 0 100%;
   max-width: 100%; }
 
+.entry-title {
+  padding: 2rem; }
+
 .post {
   margin: 0;
   padding: 2rem 0; }
   .post .entry-title {
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    padding: 2rem; }
+    .post .entry-title h1 {
+      padding: 2rem; }
     .post .entry-title a {
       color: #212529; }
       .post .entry-title a:hover {
@@ -6990,17 +6998,13 @@ a.text-dark:hover, a.text-dark:focus {
 .blog .post {
   padding: 6rem 0; }
   .blog .post:nth-child(odd) {
-    background-color: #f8f9fa; }
+    background-color: black; }
 
-/*
-.blog-post{
-  margin:0;
-  padding: 6rem 0;
+.site-content {
+  padding: 2rem; }
+  .site-content .banner .hentry {
+    background-color: transparent; }
 
-  &:nth-child(odd){
-  background-color: black;
-}
-}*/
 /*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/
@@ -7053,6 +7057,10 @@ a.text-dark:hover, a.text-dark:focus {
   text-transform: uppercase;
   font-size: .9rem; }
 
+.page-header {
+  padding-top: 1rem;
+  padding-bottom: 2rem; }
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
@@ -7063,6 +7071,39 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #f8f9fa;
   background-color: #2f2f2f;
   color: white; }
+
+/*--------------------------------------------------------------
+## homepage
+--------------------------------------------------------------*/
+.home-page .home-project {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 40px; }
+  .home-page .home-project img {
+    width: 100%;
+    max-height: 420px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3px;
+    margin-bottom: 10px; }
+  .home-page .home-project h2 {
+    width: 29%;
+    float: left;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #f8f9fa; }
+  .home-page .home-project p {
+    width: 69%;
+    float: right;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #f8f9fa; }
 
 .site-content {
   word-break: break-word; }

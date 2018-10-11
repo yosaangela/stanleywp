@@ -1,0 +1,31 @@
+.home-page {
+    .home-project {
+    	@include make-col-ready();
+    	@include make-col(12);
+    	margin-bottom: 40px;
+
+    	img {
+    		width: 100%;
+    		max-height: 420px;
+    		object-fit: cover;
+    		border-radius: 3px;
+    		margin-bottom: 10px;
+    	}
+
+    	h2 {
+    		width: 29%;
+    		float: left;
+    		padding: 30px;
+    		border-radius: 3px;
+    		background-color: $gray-100;
+    	}
+
+    	p {
+    		width: 69%;
+    		float: right;
+    		padding: 30px;
+    		border-radius: 3px;
+    		background-color: $gray-100;
+    	}
+    }
+}

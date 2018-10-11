@@ -15,7 +15,7 @@ get_header(); ?>
 				<?php
 				if ( have_posts() ) : ?>
 
-					<header class="page-header col-md-6">
+					<header class="page-header col-md-12">
 
 							<?php $project_title = get_theme_mod( 'project_title', 'Projects' ); ?>
 

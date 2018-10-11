@@ -20,6 +20,11 @@
 				</div><!--  .post-thumbnail -->
 			<?php endif;?>
 			<header class="entry-header">
-				<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+				<?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); 
+
+					if (get_field('project_subtitle')) {
+					echo "<h3>" . get_field('project_subtitle') . "</h3>";
+					}
+				?>
 			</header><!-- .entry-header -->
 </article><!-- #post-## -->

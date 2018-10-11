@@ -29,7 +29,7 @@
 				
 				<?php if (has_custom_logo()){
 					the_custom_logo();
-				} else{?>
+				} else{ ?>
 					<div class="navbar-brand mb-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
 			   <?php } ?> 
 			   
@@ -55,4 +55,6 @@
 		</nav>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<?php (is_front_page()) ? $blog_p = 'home-page' : $blog_p = ''; ?>
+
+	<div id="content" class="site-content <?php echo $blog_p; ?>">
