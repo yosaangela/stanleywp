@@ -1,7 +1,8 @@
-<div class="container">	
-	<div class="row mt-5">
+<div class="container top">	
+	<div class="col mt-5">
+		<p>haii</p>
 		<?php 
-			// the query
+			//the query
 			$args = array('post_type' => 'project', 'posts_per_page' => 6);
 
 			$the_query = new WP_Query( $args ); ?>
@@ -34,5 +35,6 @@
 			<?php else : ?>
 				<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
-	</div><!--  .row -->
+	</div><!--.row -->
 </div><!--  .container -->
+

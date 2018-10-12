@@ -15,7 +15,6 @@
 
 get_header(); ?>
 
-
 	<?php include get_stylesheet_directory() . '/includes/homepage/banner.php'; ?>
 	<?php include get_stylesheet_directory() . '/includes/homepage/projects.php'; ?>
 

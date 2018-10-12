@@ -88,6 +88,19 @@ function stanleywp_content_width() {
 add_action( 'after_setup_theme', 'stanleywp_content_width', 0 );
 
 
+
+function social_media_icons( $contactmethods ) {
+    // Add social media
+    $contactmethods['twitter'] = 'Twitter';
+    $contactmethods['facebook'] = 'Facebook';
+    $contactmethods['gplus'] = 'Google Plus';
+    $contactmethods['linkedin'] = 'Linkedin';
+
+    return $contactmethods;
+}
+add_filter('user_contactmethods','social_media_icons',10,1);
+
+
 /**
  * Add CSS/JS Scritps
  */

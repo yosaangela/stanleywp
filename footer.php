@@ -24,7 +24,11 @@
 					<?php dynamic_sidebar('footer2')?>
 				</div>
 				<div class="col-md-4">
-					<?php dynamic_sidebar('footer3')?>
+					
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-linkedin"></a>
+					<a href="#" class="fa fa-google"></a>
+					<a href="#" class="fa fa-instagram"></a>
 				</div>
 
 			</div>

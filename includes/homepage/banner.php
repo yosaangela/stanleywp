@@ -1,6 +1,7 @@
 
+<div class="container top">
 <div class="banner">
-	<div class="container">
+	
 		<div class="row justify-content-center">
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main text-center" role="main">
@@ -22,4 +23,4 @@
 			</div><!-- #primary -->
 		</div>
 	</div>
-</div><!--  .banner -->
+</div><!--  container -->
