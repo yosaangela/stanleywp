@@ -7102,14 +7102,26 @@ a.text-dark:hover, a.text-dark:focus {
     border-radius: 3px;
     background-color: #f8f9fa; }
 
-.home-page .banner {
-  padding-top: 2rem; }
+.home-page .is-full {
+  max-width: 100%; }
 
-.container .top {
-  width: 100%; }
+.site-content {
+  padding: 0; }
 
-.container .banner {
-  width: 100%; }
+.entry-title h1 {
+  margin: 2rem; }
+
+.top .banner {
+  width: 100%;
+  background-color: #f8f9fa; }
+
+@media (min-width: 992px) {
+  .top .container {
+    max-width: 100%; } }
+
+@media (min-width: 1200px) {
+  .top .container {
+    max-width: 100%; } }
 
 .site-content {
   word-break: break-word; }

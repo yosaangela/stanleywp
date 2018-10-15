@@ -1,20 +1,24 @@
 
-<div class="container top">
+<div class="well full-width">
 <div class="banner">
 	
 		<div class="row justify-content-center">
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main text-center" role="main">
 
+
 					<?php
-					while ( have_posts() ) : the_post();
+					while ( have_posts() ) : the_post(); ?>
 
-						get_template_part( 'template-parts/content', 'page' );
 
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
+						
+						<img class="is-full" src="<?php echo get_template_directory_uri(); ?>/images/depan.jpg" 
+    					alt="Facebook" />
+					
+						<?php 
+						//get_template_part( 'template-parts/content', 'page' );
+
+						
 
 					endwhile; // End of the loop.
 					?>

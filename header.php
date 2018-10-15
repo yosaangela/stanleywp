@@ -57,20 +57,24 @@
 </style>
 </head>
 
+
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header" role="banner">
-	    <nav class="navbar navbar-expand-lg navbar-dark bg-primary "> <!-- bg-light -->
-	    	<div class="container">
-				
-				<?php if (has_custom_logo()){
+		<div class="pos-f-t">
+	    <nav class="navbar navbar-dark bg-dark "> <!-- bg-light -->
+	    	<div class="bg-dark p-4">
+			 <?php if (has_custom_logo()){
 					the_custom_logo();
 				} else{ ?>
 					<div class="navbar-brand mb-0"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
 			   <?php } ?> 
+
+   			 </div>				
+   
 			   
-				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
 		   		<div class="collapse navbar-collapse" id="navbarNav">
@@ -88,8 +92,9 @@
 	            ?>
 	          </div>
 
-	        </div>
+	        
 		</nav>
+		</div>
 	</header><!-- #masthead -->
 
 	<?php (is_front_page()) ? $blog_p = 'home-page' : $blog_p = ''; ?>

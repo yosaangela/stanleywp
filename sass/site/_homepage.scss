@@ -11,6 +11,7 @@
     		border-radius: 3px;
     		margin-bottom: 10px;
     	}
+        
 
     	h2 {
     		width: 50%;//15
@@ -27,16 +28,43 @@
     		border-radius: 3px;
     		background-color: $gray-100;
     	}
+
     }
-    .banner{
-        padding-top: 2rem;
-    }
+    .is-full {
+            max-width: 100%;
+        }
+    
+
 }
-.container{
-    .top{
-        width: 100%;
-    }
+
+
+
+.site-content{
+    padding:0;
+
+}
+
+.entry-title h1{
+    
+    margin: 2rem;
+    
+}
+
+.top{
     .banner{
         width:100%;
+        background-color: $gray-100;
+    }
+
+    @media (min-width: 992px) {
+        .container {
+             max-width:100%;
+        }
+    }
+
+    @media (min-width: 1200px){
+        .container {
+                max-width: 100%;
+            }
     }
 }

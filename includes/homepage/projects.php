@@ -1,4 +1,4 @@
-<div class="container top">	
+<div class="container">	
 	<div class="col mt-5">
 		<p>haii</p>
 		<?php 
@@ -37,4 +37,3 @@
 			<?php endif; ?>
 	</div><!--.row -->
 </div><!--  .container -->
-
